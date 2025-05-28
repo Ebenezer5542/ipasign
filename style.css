@@ -1,3 +1,5 @@
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -19,7 +21,7 @@ html, body {
 
 .welcome-message {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
   margin: 30px 0;
@@ -50,7 +52,7 @@ html, body {
     z-index: 0;
     padding: 40px;
     width: 80%;      /* 80% of its parent container */
-    height: 70vh;
+    height: 60%;
 }
 
 .bg-border::before {
