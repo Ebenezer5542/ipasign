@@ -49,6 +49,8 @@ html, body {
     position: relative; /* <-- REQUIRED */
     z-index: 0;
     padding: 40px;
+    width: 80%;      /* 80% of its parent container */
+    height: 70vh;
 }
 
 .bg-border::before {
