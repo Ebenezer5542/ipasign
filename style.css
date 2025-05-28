@@ -1,0 +1,71 @@
+
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: #00FFBF;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin: 20px;
+}
+
+.welcome-message {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  color: #013220;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.welcome-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.surveycto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surveycto iframe {
+  width: 90%;
+  height: 600px;
+  border: 0;
+}
+
+.bg-border {
+    position: relative; /* <-- REQUIRED */
+    z-index: 0;
+    padding: 40px;
+}
+
+.bg-border::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    opacity: 0.5; /* adjust the background image opacity here */
+    z-index: -1;
+}
+
+.all_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(back_image.jpg);
+    background-size: cover;  /* scale image to cover the element */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* prevent tiling */
+    padding: 50px;
+}
